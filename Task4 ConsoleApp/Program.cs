@@ -9,7 +9,7 @@ namespace Homework4
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public virtual void Getinfo()
+        public virtual void GetInfo()
         {
             Console.WriteLine("Coordinates : {0}, {1};\n name: {2};\n description: {3}", X, Y, Name, Description);
         }
@@ -20,7 +20,7 @@ namespace Homework4
         private double StreamSpeed { get; set; }
         private double Length { get; set; }
 
-        public override void Getinfo()
+        public override void GetInfo()
         {
             Console.WriteLine(" Coordinates : {0}, {1};\n name: {2};\n description: {3},\n speed of stream: {4},\n length: {5}", X, Y, Name, Description, StreamSpeed, Length);
         }
@@ -28,8 +28,8 @@ namespace Homework4
 
     class Mountain : GeographicalObject
     {
-        private double HighestPeak { get; set; }
-        public override void Getinfo()
+        public double HighestPeak { get; set; }
+        public override void GetInfo()
         {
             Console.WriteLine(" Coordinates : {0}, {1};\n name: {2};\n description: {3},\n highest peak: {4}", X, Y, Name, Description, HighestPeak);
         }
@@ -39,6 +39,12 @@ namespace Homework4
     {
         public static void Main(string[] args)
         {
+            Mountain hoverla = new Mountain()
+            {
+                Name = "Hoverla", Description = "highest mountain in Ukraine", X = 51.20231, Y = 67.13156,
+                HighestPeak = 2061
+            };
+            hoverla.GetInfo();
         }
     }
 }

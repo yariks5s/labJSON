@@ -16,6 +16,7 @@ namespace Task5_WinformsApp
         public Form1()
         {
             InitializeComponent();
+            Headers();
         }
         
         private Products _burger = new Products()
@@ -65,6 +66,19 @@ namespace Task5_WinformsApp
             dataGridView1.Columns[8].Name = "Product Quantity";
             dataGridView1.Columns[9].Name = "Product Expiration Date";
             dataGridView1.Columns[10].Name = "Product Units";
+            textBoxName.Visible = false;
+            textBoxPrice.Visible = false;
+            textBoxCountry.Visible = false;
+            textBoxDescription.Visible = false;
+            textBoxDateOfPack.Visible = false;
+            textBoxQuantityOfPage.Visible = false;
+            textBoxPublishHouse.Visible = false;
+            textBoxAuthors.Visible = false;
+            textBoxQuantity.Visible = false;
+            textBoxExpDate.Visible = false;
+            textBoxUnits.Visible = false;
+            hideInputButton.Visible = false;
+            acceptInputButton.Visible = false;
         }
 
         private void Form1_load(object sender, EventArgs e)
@@ -82,61 +96,55 @@ namespace Task5_WinformsApp
             throw new System.NotImplementedException();
         }
         
-        private void button1_Click_1(object sender, EventArgs e)
+        private void AddBook1ButtonClick(object sender, EventArgs e)
         {
-            Headers();
-            
+
             string[] row = _annaKarenina.GetData();
             dataGridView1.Rows.Add(row);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void AddBook2ButtonClick(object sender, EventArgs e)
         {
             {
-                Headers();
-
                 string[] row = _kobzar.GetData();
                 dataGridView1.Rows.Add(row);
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void AddItem1ButtonClick(object sender, EventArgs e)
         {
             {
-                Headers();
-
                 string[] row = _burger.GetData();
                 dataGridView1.Rows.Add(row);
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void AddItem2ButtonClick(object sender, EventArgs e)
         {
             {
-                Headers();
-
                 string[] row = _pizza.GetData();
                 dataGridView1.Rows.Add(row);
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void RemoveSelectedButtonClick(object sender, EventArgs e)
         {
             if (this.dataGridView1.SelectedRows.Count > 0)
             {
                 dataGridView1.Rows.RemoveAt(this.dataGridView1.SelectedRows[0].Index);
             }   
         }
+        
 
-        private void button6_Click(object sender, EventArgs e)
+        private void RemoveFirstButtonClick(object sender, EventArgs e)
         {
             if (this.dataGridView1.Rows.Count > 0)
             {
                 dataGridView1.Rows.RemoveAt(this.dataGridView1.Rows[0].Index);
             }
         }
-
-        private void button7_Click(object sender, EventArgs e)
+        
+        private void RemoveLastButtonClick(object sender, EventArgs e)
         {
             if (this.dataGridView1.Rows.Count > 0)
             {
@@ -144,22 +152,56 @@ namespace Task5_WinformsApp
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void ShowCustomTextBoxButtonClick(object sender, EventArgs e)
         {
-            Headers();
+            textBoxName.Visible = true;
+            textBoxPrice.Visible = true;
+            textBoxCountry.Visible = true;
+            textBoxDescription.Visible = true;
+            textBoxDateOfPack.Visible = true;
+            textBoxQuantityOfPage.Visible = true;
+            textBoxPublishHouse.Visible = true;
+            textBoxAuthors.Visible = true;
+            textBoxQuantity.Visible = true;
+            textBoxExpDate.Visible = true;
+            textBoxUnits.Visible = true;
+            hideInputButton.Visible = true;
+            acceptInputButton.Visible = true;
+            showCustomTextBoxButton.Enabled = false;
+        }
 
+        private void HideCustomTextBoxButtonClick(object sender, EventArgs e)
+        {
+            textBoxName.Visible = false;
+            textBoxPrice.Visible = false;
+            textBoxCountry.Visible = false;
+            textBoxDescription.Visible = false;
+            textBoxDateOfPack.Visible = false;
+            textBoxQuantityOfPage.Visible = false;
+            textBoxPublishHouse.Visible = false;
+            textBoxAuthors.Visible = false;
+            textBoxQuantity.Visible = false;
+            textBoxExpDate.Visible = false;
+            textBoxUnits.Visible = false;
+            acceptInputButton.Visible = false;
+            hideInputButton.Visible = false;
+            showCustomTextBoxButton.Enabled = true;
+        }
+
+        private void AddCustomDataButtonClick(object sender, EventArgs e)
+        {
             int n = dataGridView1.Rows.Add();
-            dataGridView1.Rows[n].Cells[0].Value = textBox1.Text;
-            dataGridView1.Rows[n].Cells[1].Value = textBox2.Text;
-            dataGridView1.Rows[n].Cells[2].Value = textBox3.Text;
-            dataGridView1.Rows[n].Cells[3].Value = textBox4.Text;
-            dataGridView1.Rows[n].Cells[4].Value = textBox5.Text;
-            dataGridView1.Rows[n].Cells[5].Value = textBox6.Text;
-            dataGridView1.Rows[n].Cells[6].Value = textBox7.Text;
-            dataGridView1.Rows[n].Cells[7].Value = textBox8.Text;
-            dataGridView1.Rows[n].Cells[8].Value = textBox9.Text;
-            dataGridView1.Rows[n].Cells[9].Value = textBox10.Text;
-            dataGridView1.Rows[n].Cells[10].Value = textBox11.Text;
+            dataGridView1.Rows[n].Cells[0].Value = textBoxName.Text;
+            dataGridView1.Rows[n].Cells[1].Value = textBoxPrice.Text;
+            dataGridView1.Rows[n].Cells[2].Value = textBoxCountry.Text;
+            dataGridView1.Rows[n].Cells[3].Value = textBoxDescription.Text;
+            dataGridView1.Rows[n].Cells[4].Value = textBoxDateOfPack.Text;
+            dataGridView1.Rows[n].Cells[5].Value = textBoxQuantityOfPage.Text;
+            dataGridView1.Rows[n].Cells[6].Value = textBoxPublishHouse.Text;
+            dataGridView1.Rows[n].Cells[7].Value = textBoxAuthors.Text;
+            dataGridView1.Rows[n].Cells[8].Value = textBoxQuantity.Text;
+            dataGridView1.Rows[n].Cells[9].Value = textBoxExpDate.Text;
+            dataGridView1.Rows[n].Cells[10].Value = textBoxUnits.Text;
         }
     }
 }
