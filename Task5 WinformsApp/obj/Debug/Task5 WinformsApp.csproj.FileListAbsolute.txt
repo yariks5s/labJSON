@@ -1,10 +1,11 @@
 C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\bin\Debug\Task5_WinformsApp.exe.config
 C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\bin\Debug\Task5_WinformsApp.exe
 C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\bin\Debug\Task5_WinformsApp.pdb
-C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\obj\Debug\Task5 WinformsApp.csprojAssemblyReference.cache
 C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\obj\Debug\Task5_WinformsApp.Properties.Resources.resources
 C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\obj\Debug\Task5 WinformsApp.csproj.GenerateResource.cache
 C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\obj\Debug\Task5 WinformsApp.csproj.CoreCompileInputs.cache
 C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\obj\Debug\Task5_WinformsApp.exe
 C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\obj\Debug\Task5_WinformsApp.pdb
 C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\obj\Debug\Task5_WinformsApp.Form1.resources
+C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\obj\Debug\Task5 WinformsApp.csproj.AssemblyReference.cache
+C:\Users\bryuh\RiderProjects\Homework4\Task5 WinformsApp\obj\Debug\Task5 WinformsApp.csproj.SuggestedBindingRedirects.cache

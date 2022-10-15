@@ -48,9 +48,10 @@
             this.textBoxQuantity = new System.Windows.Forms.TextBox();
             this.textBoxExpDate = new System.Windows.Forms.TextBox();
             this.textBoxUnits = new System.Windows.Forms.TextBox();
-            this.showCustomTextBoxButton = new System.Windows.Forms.Button();
+            this.showCustomBookTextBoxButton = new System.Windows.Forms.Button();
             this.hideInputButton = new System.Windows.Forms.Button();
             this.acceptInputButton = new System.Windows.Forms.Button();
+            this.showCustomProductTextBoxButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,7 +83,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1516, 271);
             this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // addProduct1Button
             // 
@@ -211,19 +211,19 @@
             this.textBoxUnits.Size = new System.Drawing.Size(100, 22);
             this.textBoxUnits.TabIndex = 19;
             // 
-            // showCustomTextBoxButton
+            // showCustomBookTextBoxButton
             // 
-            this.showCustomTextBoxButton.Location = new System.Drawing.Point(12, 22);
-            this.showCustomTextBoxButton.Name = "showCustomTextBoxButton";
-            this.showCustomTextBoxButton.Size = new System.Drawing.Size(113, 59);
-            this.showCustomTextBoxButton.TabIndex = 20;
-            this.showCustomTextBoxButton.Text = "Add custom data";
-            this.showCustomTextBoxButton.UseVisualStyleBackColor = true;
-            this.showCustomTextBoxButton.Click += new System.EventHandler(this.ShowCustomTextBoxButtonClick);
+            this.showCustomBookTextBoxButton.Location = new System.Drawing.Point(12, 22);
+            this.showCustomBookTextBoxButton.Name = "showCustomBookTextBoxButton";
+            this.showCustomBookTextBoxButton.Size = new System.Drawing.Size(113, 59);
+            this.showCustomBookTextBoxButton.TabIndex = 20;
+            this.showCustomBookTextBoxButton.Text = "Add custom book";
+            this.showCustomBookTextBoxButton.UseVisualStyleBackColor = true;
+            this.showCustomBookTextBoxButton.Click += new System.EventHandler(this.ShowCustomBookTextBoxButtonClick);
             // 
             // hideInputButton
             // 
-            this.hideInputButton.Location = new System.Drawing.Point(138, 22);
+            this.hideInputButton.Location = new System.Drawing.Point(295, 22);
             this.hideInputButton.Name = "hideInputButton";
             this.hideInputButton.Size = new System.Drawing.Size(126, 58);
             this.hideInputButton.TabIndex = 21;
@@ -233,7 +233,7 @@
             // 
             // acceptInputButton
             // 
-            this.acceptInputButton.Location = new System.Drawing.Point(293, 22);
+            this.acceptInputButton.Location = new System.Drawing.Point(450, 22);
             this.acceptInputButton.Name = "acceptInputButton";
             this.acceptInputButton.Size = new System.Drawing.Size(121, 58);
             this.acceptInputButton.TabIndex = 22;
@@ -241,15 +241,26 @@
             this.acceptInputButton.UseVisualStyleBackColor = true;
             this.acceptInputButton.Click += new System.EventHandler(this.AddCustomDataButtonClick);
             // 
+            // showCustomProductTextBoxButton
+            // 
+            this.showCustomProductTextBoxButton.Location = new System.Drawing.Point(153, 22);
+            this.showCustomProductTextBoxButton.Name = "showCustomProductTextBoxButton";
+            this.showCustomProductTextBoxButton.Size = new System.Drawing.Size(113, 59);
+            this.showCustomProductTextBoxButton.TabIndex = 23;
+            this.showCustomProductTextBoxButton.Text = "Add custom product";
+            this.showCustomProductTextBoxButton.UseVisualStyleBackColor = true;
+            this.showCustomProductTextBoxButton.Click += new System.EventHandler(this.ShowCustomProductTextBoxButtonClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1515, 511);
+            this.Controls.Add(this.showCustomProductTextBoxButton);
             this.Controls.Add(this.acceptInputButton);
             this.Controls.Add(this.hideInputButton);
-            this.Controls.Add(this.showCustomTextBoxButton);
+            this.Controls.Add(this.showCustomBookTextBoxButton);
             this.Controls.Add(this.textBoxUnits);
             this.Controls.Add(this.textBoxExpDate);
             this.Controls.Add(this.textBoxQuantity);
@@ -276,11 +287,15 @@
             this.PerformLayout();
         }
 
+        private System.Windows.Forms.Button showCustomProductTextBoxButton;
+
+        private System.Windows.Forms.Button button1;
+
         private System.Windows.Forms.Button acceptInputButton;
 
         private System.Windows.Forms.Button hideInputButton;
 
-        private System.Windows.Forms.Button showCustomTextBoxButton;
+        private System.Windows.Forms.Button showCustomBookTextBoxButton;
 
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.TextBox textBoxName;

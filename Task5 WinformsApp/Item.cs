@@ -20,7 +20,7 @@
         public string _publishingHouse { get; set; }
         public string _authors { get; set; }
 
-        public new string[] GetData()
+        public new object[] GetData()
         {
             string[] list = new string[] { _name, _price, _country, _description, _dateOfPackaging, _quatnityOfPages, _publishingHouse, _authors, "", "", ""};
             return list;
@@ -31,7 +31,7 @@
         public string _quantity { get; set; }
         public string _expirationDate { get; set; } 
         public string _units { get; set; }
-        public new string[] GetData()
+        public new object[] GetData()
         {
             string[] list = new string[] { _name, _price, _country, _description, _dateOfPackaging, "", "", "", _quantity, _expirationDate, _units};
             return list;
