@@ -1,4 +1,7 @@
-﻿namespace Task5_WinformsApp
+﻿using System.Drawing;
+using System.Reflection;
+
+namespace Task5_WinformsApp
 {
     public class Item
     {
@@ -8,8 +11,8 @@
         public string _dateOfPackaging { get; set; }
         public string _description { get; set; }
 
-        public string[] GetData()
-        {
+                public string[] GetData()
+                {
             string[] list = new string[] { _name, _price, _country, _description, _dateOfPackaging, "", "", "", "", "", ""};
             return list;
         }

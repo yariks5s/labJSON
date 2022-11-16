@@ -47,34 +47,34 @@ namespace Task5_WinformsApp
         };
 
         // Making some code templates
-        void Headers()
-        {
-            dataGridView1.ColumnCount = 11;
-            dataGridView1.Columns[0].Name = "Product Name";
-            dataGridView1.Columns[1].Name = "Product Price";
-            dataGridView1.Columns[2].Name = "Product Country";
-            dataGridView1.Columns[3].Name = "Product Description";
-            dataGridView1.Columns[4].Name = "Product Date Of Packaging (dd/mm/yyyy)";
-            dataGridView1.Columns[5].Name = "Product Quantity Of Pages";
-            dataGridView1.Columns[6].Name = "Product Publishing House";
-            dataGridView1.Columns[7].Name = "Product Authors";
-            dataGridView1.Columns[8].Name = "Product Quantity";
-            dataGridView1.Columns[9].Name = "Product Expiration Date";
-            dataGridView1.Columns[10].Name = "Product Units";
-            textBoxName.Visible = false;
-            textBoxPrice.Visible = false;
-            textBoxCountry.Visible = false;
-            textBoxDescription.Visible = false;
-            textBoxDateOfPack.Visible = false;
-            textBoxQuantityOfPage.Visible = false;
-            textBoxPublishHouse.Visible = false;
-            textBoxAuthors.Visible = false;
-            textBoxQuantity.Visible = false;
-            textBoxExpDate.Visible = false;
-            textBoxUnits.Visible = false;
-            hideInputButton.Visible = false;
-            acceptInputButton.Visible = false;
-        }
+            void Headers()
+            {
+                dataGridView1.ColumnCount = 11;
+                dataGridView1.Columns[0].Name = "Product Name";
+                dataGridView1.Columns[1].Name = "Product Price";
+                dataGridView1.Columns[2].Name = "Product Country";
+                dataGridView1.Columns[3].Name = "Product Description";
+                dataGridView1.Columns[4].Name = "Product Date Of Packaging (dd/mm/yyyy)";
+                dataGridView1.Columns[5].Name = "Product Quantity Of Pages";
+                dataGridView1.Columns[6].Name = "Product Publishing House";
+                dataGridView1.Columns[7].Name = "Product Authors";
+                dataGridView1.Columns[8].Name = "Product Quantity";
+                dataGridView1.Columns[9].Name = "Product Expiration Date";
+                dataGridView1.Columns[10].Name = "Product Units";
+                textBoxName.Visible = false;
+                textBoxPrice.Visible = false;
+                textBoxCountry.Visible = false;
+                textBoxDescription.Visible = false;
+                textBoxDateOfPack.Visible = false;
+                textBoxQuantityOfPage.Visible = false;
+                textBoxPublishHouse.Visible = false;
+                textBoxAuthors.Visible = false;
+                textBoxQuantity.Visible = false;
+                textBoxExpDate.Visible = false;
+                textBoxUnits.Visible = false;
+                hideInputButton.Visible = false;
+                acceptInputButton.Visible = false;
+            }
         void EmptyTextBox()
         {
             textBoxName.Text = "";
